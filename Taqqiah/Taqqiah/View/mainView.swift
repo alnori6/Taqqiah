@@ -9,24 +9,24 @@ import SwiftUI
 
 struct mainView: View {
     var body: some View {
-        
-        VStack(){
+        ZStack(){
+           
+            VStack(){
+                
+                Text("السلام عليكم")
+                    .font(.custom("bahijTheSansArabic-Bold", size: 40))
+                
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.accentColor)
             
-            Text("السلام عليكم")
-                .font(.custom("bahijTheSansArabic-Bold", size: 40))
-            
+            Image("land")
+                .resizable()
+                .scaledToFit()
+                .edgesIgnoringSafeArea(.all)
+                .offset(x: 0, y: 85)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.accentColor)
-//        Text("Just to confirm that everything is working")
-//            .font(.custom("Bahij TheSansArabic", size: 20))
-//        
-//        
-//        Text("السلام عليكم")
-//            .font(.custom("bahijTheSansArabic-Plain", size: 40))
-//        
-//        Text("خط بهيج")
-//            .font(.custom("BahijTheSansArabic-Bold", size: 40))
     }
 }
 
